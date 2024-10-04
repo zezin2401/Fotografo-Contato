@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Fotógrafo Lucas De Almeida</title>
+    <link rel="stylesheet" href="assets/contato.css">
+</head>
+
+<body>
+
+    <h1>Entre em Contato</h1>
+        
+    <h2>Formulário de Contato</h2>
+    <form id="contatoForm" onsubmit="mostrarMensagem(event)">
+        <label>Nome: <input type="text" name="name" required></label>
+        <label>E-mail: <input type="email" name="email" required></label>
+        <label>Telefone: <input type="tel" name="phone"></label>
+        <label>Mensagem: <textarea name="message" required></textarea></label>
+        <button type="submit" id="enviarBotao">Enviar</button>
+        <a class="BT" href="contato.html">Voltar</a>
+    </form>
+
+    <div id="mensagem">
+        FORMULÁRIO ENVIADO
+    </div>
+
+    <div class="CT">
+        <h2>Informações de Contato</h2>
+        <p>E-mail: lucasalmeida@gmail.com.br</p>
+        <p>Telefone: (11) 98765-4321</p>
+    </div>
+
+    <div class="HR">
+        <h2>Horário de Atendimento</h2>
+        <p>Segunda a Sexta: 9h - 18h</p>
+        <p>Sábado: 10h - 16h</p>
+        <p>Domingos e Feriados: Fechado</p>
+    </div>
+
+    <script>
+        function mostrarMensagem(event) {
+            event.preventDefault(); 
+            document.getElementById('mensagem').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
